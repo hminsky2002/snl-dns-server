@@ -1,0 +1,12 @@
+ 1  sax2v1r (192.168.1.1)  4.687 ms  5.535 ms  4.233 ms
+ 2  syn-074-071-000-001.res.spectrum.com (74.71.0.1)  14.015 ms  12.903 ms  14.037 ms
+ 3  lag-61.nymanyfo01h.netops.charter.com (68.173.202.160)  11.956 ms  13.094 ms  10.106 ms
+ 4  lag-115.nyclnyrg01r.netops.charter.com (68.173.198.64)  15.912 ms  19.331 ms  16.299 ms
+ 5  lag-29-10.nwrknjmd67w-bcr00.netops.charter.com (107.14.19.24)  19.727 ms  13.146 ms
+    lag-19-10.nwrknjmd67w-bcr00.netops.charter.com (66.109.6.78)  16.016 ms
+ 6  lag-12.nycmny837aw-bcr00.netops.charter.com (66.109.6.27)  13.126 ms
+    lag-20.nycmny837aw-bcr00.netops.charter.com (66.109.5.138)  19.292 ms  14.769 ms
+ 7  syn-024-030-200-187.inf.spectrum.com (24.30.200.187)  17.817 ms * *
+ 8  * * *
+ 9  * * *
+10  * * *
