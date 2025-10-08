@@ -1,7 +1,10 @@
 # SNL DNS server mock
 A simple DNS to forward requests towards the optimal end server (measured by latency)
 
-# A note about server performance
+## Usage 
+The server is implemented using python in `dns-server.py` and can be run using `python dns-server.py`. It presumes that the ping command is installed on the root machine. 
+
+### A note about server performance
 It seems that the server at `34.171.194.225` is about 28% faster than `34.174.196.10` 
 for a round trip ping of the same size. I measured this using `ping -c 100 -s [56,128] <ip_addr>` for both servers (output of these tests is seen in `/pings/`), calculating the ratio between the longer and shorter average ping times and then averaging those ratios between the two packet sizes. 
 
