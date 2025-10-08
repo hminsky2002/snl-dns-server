@@ -2,7 +2,7 @@
 A simple DNS to forward requests towards the optimal end server (measured by latency)
 
 ## Usage 
-The server is implemented using python in `dns-server.py` and can be run using `python dns-server.py`. It presumes that the ping command is installed on the root machine. 
+The server is implemented using python in `dns-server.py`. To run, create a virtual envirionment with `python3 -m venv .venv`, activate the envrionment with `. .venv/bin/activate`, and install the required packages with `pip install -r requirements.txt`. Then, run the server with `python dns-server.py`. It presumes that the ping command is installed on the root machine. 
 
 ### A note about server performance
 It seems that the server at `34.171.194.225` is about 28% faster than `34.174.196.10` 
