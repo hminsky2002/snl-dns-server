@@ -14,6 +14,7 @@ avg_rtt_regex = r'round-trip min/avg/max/stddev = [\d.]+/([\d.]+)/'
 latency_dict = {'A':0.0, 'B':0.0} 
 latency_lock = threading.Lock()
 
+
 def ping():
     a_ping = subprocess.run(['ping','-c','1',SERVER_A],capture_output=True)
     b_ping = subprocess.run(['ping','-c','1',SERVER_B],capture_output=True)

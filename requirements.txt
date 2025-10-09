@@ -1,1 +1,2 @@
+dnslib==0.9.26
 schedule==1.2.2
