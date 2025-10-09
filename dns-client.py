@@ -11,5 +11,5 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.sendto(d.pack(), (HOST, PORT))
 received = DNSRecord.parse(sock.recv(1024))
 
-print("Sent:    ", d)
-print("Received:", received)
+print("Outgoing DNS Query: ", d)
+print("Received DNS Query:", received)
