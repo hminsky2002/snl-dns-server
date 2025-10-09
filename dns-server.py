@@ -2,12 +2,15 @@ import time
 import schedule
 import subprocess
 import re
-import threading
 import socketserver
 import threading
+import os
 import time
 from dnslib import DNSRecord, RR, A
 import logging
+from dotenv import load_dotenv
+
+load_dotenv()
 
 logging.basicConfig(filename="dns-server.log", level=logging.INFO)
 
@@ -82,7 +85,9 @@ class UDPHandler(socketserver.BaseRequestHandler):
         logging_lock.release()
 
 
-HOST, PORT = "localhost", 5004
+HOST = os.getenv("DNS_HOST", "localhost")
+PORT = int(os.getenv("DNS_PORT", "5053"))
+
 with socketserver.ThreadingUDPServer((HOST, PORT), UDPHandler) as server:
 
     initialize_latency_dict()

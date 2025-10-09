@@ -1,8 +1,12 @@
 import socket
-import sys
+import os
 from dnslib import DNSRecord
+from dotenv import load_dotenv
 
-HOST, PORT = "localhost", 5004
+load_dotenv()
+
+HOST = os.getenv("DNS_HOST", "localhost")
+PORT = int(os.getenv("DNS_PORT", "5053"))
 
 d = DNSRecord.question('snl-columbia-university.github.io')
 
